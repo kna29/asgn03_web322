@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>About - Lego Collection</title>
+  </head>
+
+  <div class="navbar bg-gray-800 p-1">
+    <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl text-white">Lego Collections</a>
+    </div>
+
+    <div class="navbar-center flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a href="/about" class="text-white active active:bg-pink-500">About</a></li>
+            <li>
+                <details>
+                    <summary class="text-white">Themes</summary>
+                    <ul class="p-2 bg-black right-0">
+                        <li><a href="/lego/sets?theme=technic" class="text-white">Technic</a></li>
+                        <li><a href="/lego/sets?theme=classic%20town" class="text-white">Classic Town</a></li>
+                        <li><a href="/lego/sets?theme=supplemental" class="text-white">Supplemental</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container mx-auto my-8">
+    <livewire:daisyui.hero
+        :title="'About Me!'"
+        :button-link="'#'"
+        :button-text="'Explore More'"
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <img
+                src="https://media.istockphoto.com/id/655976164/photo/close-up-of-female-artists-hand.jpg?s=2048x2048&w=is&k=20&c=D7epf1JzCPhJ_8WyO71tkOgb1_FUrXdFtMOlXR3jAfo="
+                alt="Dessert!"
+                style="width: 80%; height: 70%;"
+                />
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-bold mb-4">All About Me</h2>
+            <p>I'm Khushi, a 21-year-old currently studying Computer Programming at Seneca. I am born and broughtup in India. My keen interest lies in mathematics and also like to make websites which I am learning in this field, and my goal is to use the programming skills I'm acquiring to make meaningful contributions to this field.</p>
+            <br>
+            <p>During my leisure time, I find joy in a range of activities. Reading books is one of my favorite pastimes, offering me a diverse array of knowledge and inspiration. Additionally, I express my creativity through baking delightful desserts for my roommates, adding a touch of warmth and togetherness to our shared living space. Music is another passion of mine, especially the soulful melodies of RnB, which bring me comfort and inspiration. Moreover, I also like to do paintings which makes me more happy.</p>
+            <br>
+            <p>My journey is a blend of structured learning and creative expression. Combining the intricacies of computer programming with my personal interests, I'm navigating a path that is both exciting and full of possibilities. As I progress through the world of code and creativity, I'm eager to see how these experiences will shape my identity and aspirations in the realm of computer programming.</p>
+          </div>
+    </div>
+</div>
+</body>
+</html>

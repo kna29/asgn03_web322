@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lego Collections</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div class="navbar bg-gray-800 p-1">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl text-white"
+          >Lego Collections</a
+        >
+      </div>
+
+      <div class="navbar-center flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="/about" class="text-white">About</a></li>
+          <li>
+            <details>
+              <summary class="text-white">Themes</summary>
+              <ul class="p-2 bg-black right-0">
+                <li>
+                  <a href="/lego/sets?theme=technic" class="text-white"
+                    >Technic</a
+                  >
+                </li>
+                <li>
+                  <a href="/lego/sets?theme=classic%20town" class="text-white"
+                    >Classic Town</a
+                  >
+                </li>
+                <li>
+                  <a href="/lego/sets?theme=supplemental" class="text-white"
+                    >Supplemental</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container mx-auto my-8">
+      <livewire:daisyui.hero
+        :title="'Explore the Lego Collection'"
+        :button-link="'/lego/sets'"
+        :button-text="'Explore Sets'"
+      />
+
+        <body>
+
+          <div class="container mx-auto text-center">
+            <div class="hero bg-base-200 rounded-lg p-6">
+              <div class="hero-content text-center">
+                <div class="max-w-md">
+                  <h1 style="font-size: 3rem;" class="font-bold">Explore Lego Sets Below!</h1>
+      
+                  <p style="white-space: nowrap;" class="text-center">
+                    Unleash your creativity in the world of LEGO sets!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="container mx-auto my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <!-- Card 1 -->
+            <div
+              class="card bordered"
+              style="border: 4px solid #ff3366; width: 98%; height: 70%"
+            >
+              <img
+                src="https://cdn.rebrickable.com/media/sets/001-1.jpg"
+                alt="Set 1 Image"
+                class="rounded-lg"
+              />
+              <h2 style="color: #ff3366">Gears</h2>
+              <p style="color: white">
+                The collection debuted in the United States and Canada under the
+                Samsonite brand in 1965. In 1969, it underwent a re-release,
+                designated as an educational set (322-4). Notably, this set was
+                never made available in the European market.
+              </p>
+              <a
+                href="/lego/sets/001-1"
+                class="btn"
+                style="background-color: #ff3366"
+                >View Set</a
+              >
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="card bordered"
+              style="border: 4px solid #ff3366; width: 98%"
+            >
+              <img
+                src="https://cdn.rebrickable.com/media/sets/002-1.jpg"
+                alt="Set 2 Image"
+                class="rounded-lg"
+              />
+              <h2 style="color: #ff3366">4.5V Samsonite Gears Motor Set</h2>
+              <p style="color: white">
+                Samsonite introduced this set in the United States and Canada in
+                1965, and it did not see a release in Europe.
+              </p>
+              <a
+                href="/lego/sets/002-1"
+                class="btn"
+                style="background-color: #ff3366"
+                >View Set</a
+              >
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="card bordered"
+              style="border: 4px solid #ff3366; width: 98%; height: 60%"
+            >
+              <img
+                src="https://cdn.rebrickable.com/media/sets/003-1.jpg"
+                alt="Set 3 Image"
+                class="rounded-lg"
+              />
+              <h2 style="color: #ff3366">Master Mechanic Set</h2>
+              <p style="color: white">
+                The set made its debut in the United States and Canada under the
+                Samsonite brand in 1966. Notably, it was not made available for
+                release in Europe. This set requires a whopping 403 blocks to be
+                built.
+              </p>
+              <a
+                href="/lego/sets/003-1"
+                class="btn"
+                style="background-color: #ff3366"
+                >View Set</a
+              >
+            </div>
+          </div>
+        </body>
+      </html>
+    </div>
+  </body>
+</html>
